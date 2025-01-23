@@ -14,6 +14,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-style: normal;
+    font-family: 'Pretendard-Regular';
 }
 
 li {
@@ -323,7 +324,7 @@ img {
     background-color: white;
 }
 #header .header3 .header3_bottom .header3_bottom_list li:last-child {
-    width: 30%;
+    width: 32%;
     height: 100%;
     justify-content: center;
     padding: 2% 0 0 0%;
@@ -358,7 +359,7 @@ img {
 /* contents1 */
 #contents > div {
     width: 93vw;
-    height: 80vh;
+    height: 75vh;
     border-bottom: 1px solid black;
 }
 #contents > div > div:first-child > ul > li {
@@ -396,11 +397,12 @@ img {
 }
 #contents div div:first-child > ul:first-child li:nth-of-type(2) {
     border-bottom: 1px solid black;
-    padding-left: 8%;
+    padding-left: 5%;
 }
 #contents div div:first-child > ul:first-child li:nth-of-type(3) {
     font-size: 0.7vw;
-    padding-left: 8%;
+    padding-left: 5%;
+
     margin: 5px 0 0 0;
 }
 
@@ -414,7 +416,8 @@ img {
 #contents div div:first-child ul:nth-of-type(2) li {
     font-size: 0.7vw;
     text-align: justify;
-    padding-left: 8%;
+    padding-left: 5%;
+
     margin: 1px 0;
 }
 
@@ -424,7 +427,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 8%;
+    padding-left: 5%;
 }
 #contents div div:first-child ul:nth-of-type(3) ul:first-child {
     width: auto;
@@ -450,7 +453,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 8%;
+    padding-left: 5%;
+
     margin-top: 40px;
 }
 #contents div div:first-child ul:nth-of-type(4) li {
@@ -468,11 +472,11 @@ img {
 }
 
 #contents div div:last-child {
-    width: 70%;
+    width: 68%;
     height: 100%;
     float: right;
     box-sizing: border-box;
-    padding: 20px 30px 20px 0;
+    padding: 20px 0px 20px 0;
 }
 
 #contents div div:last-child > ul {
@@ -487,24 +491,30 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: drop-shadow(1px 1px 2px #777);
 }
 
 /* pop */
 #pop {
-    width: 550px;
-    height: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
+    width: 520px;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    background-color: rgb(255, 255, 255);
     border: 2px solid #666;
     transition: 0.5s;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
 }
 #pop .pop_head {
     width: 100%;
-    height: 20%;
-    padding: 4%;
+    padding: 6% 5% 6%;
+    border-bottom: 1px solid black;
 }
 #pop .pop_head ul {
     width: 100%;
@@ -512,7 +522,6 @@ img {
 }
 #pop .pop_head ul li {
     font-size: 20px;
-    color: #ffffff;
 }
 #pop .pop_head ul li:first-child {
     font-size: 30px;
@@ -521,8 +530,7 @@ img {
 
 #pop .pop_cont {
     width: 100%;
-    height: 70%;
-    padding: 20% 4% 0% 4%;
+    padding: 6% 4%;
 }
 #pop .pop_cont ul {
     width: 100%;
@@ -530,9 +538,8 @@ img {
 }
 #pop .pop_cont ul li {
     font-size: 16px;
-    color: white;
     text-align: justify;
-    line-height: 2.5;
+    margin: 5px 0;
 }
 #pop .pop_cont ul li:last-child {
     padding-top: 5%;
@@ -546,29 +553,25 @@ img {
 #pop .pop_btn {
     width: 100%;
     height: 10%;
+    border-top: 1px solid rgb(255, 255, 255);
+    background-color: black;
 }
 #pop .pop_btn ul {
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: #dddddd;
 }
 #pop .pop_btn ul li {
-    width: 50%;
-    height: 100%;
-    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     font-size: 15px;
     transition: 0.3s;
-}
-#pop .pop_btn li:first-child {
-    border-right: 2px solid #666;
+    color: white;
 }
 
 #pop .pop_btn li:hover {
-    background-color: #8a8a8a;
-    color: white;
 }
