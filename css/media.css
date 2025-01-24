@@ -1,0 +1,160 @@
+@media (max-width: 1500px) {
+    /* 모바일 비디오 on off */
+    /* 모바일 비디오 on off */
+    /* 모바일 비디오 on off */
+    /* 모바일 비디오 on off */
+    /* 모바일 비디오 on off */
+    .MobVd {
+        display: block;
+        padding: 0 5%;
+        margin-top: 20px;
+    }
+    #contents div div:last-child {
+        display: none;
+    }
+
+    /* 일반 media */
+    /* 일반 media */
+    /* 일반 media */
+    /* 일반 media */
+    #contents {
+    }
+    #contents > div {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    #contents div div:first-child {
+        width: 100%;
+    }
+    #contents div div:first-child ul:first-child li {
+        font-size: clamp(20px, 2vw, 25px);
+    }
+    #contents div div:first-child > ul:first-child li:nth-of-type(3) {
+        font-size: clamp(13px, 1.1vw, 25px);
+    }
+    #contents div div:first-child ul {
+        margin: 0;
+    }
+    #contents div div:first-child > ul {
+        margin-top: 20px;
+    }
+
+    #contents div div:first-child ul:nth-of-type(2) li {
+        font-size: 13px;
+    }
+    #contents div div:first-child ul:nth-of-type(3) ul:first-child li {
+        font-size: 15px;
+    }
+    #contents div div:first-child ul:nth-of-type(3) ul:last-child li {
+        font-size: 15px;
+    }
+    #contents div div:first-child ul:nth-of-type(4) {
+        margin-top: 20px;
+    }
+    #contents div div:first-child ul:nth-of-type(4) {
+        justify-content: flex-end;
+        padding: 0 5%;
+    }
+    #contents div div:first-child ul:nth-of-type(4) li {
+        width: auto;
+        border-top: 0;
+    }
+    #contents div div:first-child ul:nth-of-type(4) li a {
+        font-size: 17px;
+    }
+}
+/* 1200 */
+/* 1200 */
+/* 1200 */
+/* 1200 */
+/* 1200 */
+@media (max-width: 1200px) {
+    #header {
+        display: none;
+    }
+    #contents {
+        margin-left: 0;
+        width: 100%;
+    }
+    .MobHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        border-bottom: 1px solid black;
+        padding: 10px 15px;
+    }
+    .MobHead .logo {
+        font-size: 20px;
+        font-family: 'SunBatang-Light' !important;
+    }
+    .MobHead ul {
+    }
+    .MobHead ul li {
+    }
+    .MobHead ul li a {
+        display: inline-block;
+        padding: 10px;
+        background: blue;
+        color: white;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    .MobHead ul li a:hover {
+        background: rgb(0, 0, 0);
+
+    }
+
+    /* 일반컨텐츠  */
+    #contents div div:first-child > ul:first-child li:first-child {
+        font-size: 15px;
+    }
+    #contents div div:first-child ul:nth-of-type(2) li {
+        font-size: 11px;
+    }
+    #contents div div:first-child ul:nth-of-type(3) ul:first-child li {
+        font-size: 13px;
+    }
+    #contents div div:first-child ul:nth-of-type(3) ul:last-child li {
+        font-size: 13px;
+    }
+    #contents div div:first-child ul:nth-of-type(3) ul:last-child {
+        width: 50%;
+    }
+    #contents div div:first-child ul:nth-of-type(4) {
+        border-top: 1px solid black;
+    }
+    #contents div div:first-child ul:nth-of-type(4) li a {
+        font-size: 14px;
+    }
+    /* POP */
+    #pop {
+        width: 95%;
+        border-radius: 0;
+        border: 1px solid #777;
+    }
+    #pop .pop_head {
+        border-bottom: 1px solid #777;
+    }
+    #pop .pop_head ul li:first-child {
+        font-size: clamp(18px, 2vw, 20px);
+    }
+    #pop .pop_head ul li {
+        font-size: clamp(13px, 2vw, 20px);
+    }
+    #pop .pop_cont {
+        padding: 0 10px;
+    }
+    #pop .pop_cont ul li:first-child {
+        font-size: clamp(13px, 2vw, 20px);
+    }
+    #pop .pop_cont ul li {
+        font-size: clamp(11px, 2vw, 20px);
+    }
+    #pop .pop_btn ul li {
+        height: 40px;
+    }
+}
