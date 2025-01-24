@@ -509,7 +509,7 @@
                                 <li>안녕하세요, 구동빈입니다.</li>
                                 <li>해당 사이트는 포트폴리오 전체와 연결되어 있는 프로필 사이트입니다.</li>
                                 <li>각각의 컨텐츠 하부에 바로가기와 발표자료를 눌러 확인하실 수 있습니다.</li>
-                                <li>개인정보 및 깃 허브 정보는 <span>☰</span> 버튼을 눌러 확인 가능합니다</li>
+                                <li><span>☰</span>을 클릭해 전체화면으로 확인 가능합니다.</li>
                                 <li>꼼꼼히 살펴주시면 감사하겠습니다!</li>
                             </ul>
                         </div>
@@ -533,30 +533,29 @@
         const contents_list = document.querySelectorAll('#contents > div');
 
         const wrap = document.querySelector('#wrap');
-
-        menu_list.addEventListener('click', function (e) {
-            winSize();
-            e.preventDefault();
-            if (wrap.classList.contains('hide')) {
-                wrap.classList.remove('hide');
-            } else {
-                wrap.classList.add('hide');
-            }
-        });
-        // pop
-        // pop 요소정의
-        const pop = document.querySelector('#pop');
-        const pop_btn = document.querySelector('#pop .pop_btn ul');
-
-        pop_btn.addEventListener('click', function (e) {
-            e.preventDefault();
-            pop.style.opacity = '0';
-            setTimeout(() => (pop.style.zIndex = '-10'), 500);
-        });
-
-        // 반응형 작업
-        // 윈도우 리사이즈
         document.addEventListener('DOMContentLoaded', () => {
+            menu_list.addEventListener('click', function (e) {
+                winSize();
+                e.preventDefault();
+                if (wrap.classList.contains('hide')) {
+                    wrap.classList.remove('hide');
+                } else {
+                    wrap.classList.add('hide');
+                }
+            });
+            // pop
+            // pop 요소정의
+            const pop = document.querySelector('#pop');
+            const pop_btn = document.querySelector('#pop .pop_btn ul');
+
+            pop_btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                pop.style.opacity = '0';
+                setTimeout(() => (pop.style.zIndex = '-10'), 500);
+            });
+
+            // 반응형 작업
+            // 윈도우 리사이즈
             function winSize() {
                 win_W = window.innerWidth;
             }
