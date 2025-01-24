@@ -539,7 +539,7 @@ img {
 
 /* pop */
 #pop {
-    width: auto;
+    width: 550px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -552,7 +552,6 @@ img {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    border-radius: 15px;
     overflow: hidden;
 }
 #pop .pop_head {
