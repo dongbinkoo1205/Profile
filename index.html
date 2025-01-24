@@ -574,7 +574,8 @@
             }
 
             window.addEventListener('resize', adjustPadding); // 창 크기 변경 시 재계산
-            adjustPadding(); // 초기 호출
         }
+        // 페이지 로드 시 adjustPadding 함수 실행
+        adjustPadding();
     </script>
 </html>
