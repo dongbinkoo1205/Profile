@@ -105,7 +105,6 @@
     }
     .MobHead ul li a:hover {
         background: rgb(0, 0, 0);
-
     }
 
     /* 일반컨텐츠  */
@@ -129,6 +128,7 @@
     }
     #contents div div:first-child ul:nth-of-type(4) li a {
         font-size: 14px;
+        padding: 12px 5px;
     }
     /* POP */
     #pop {
